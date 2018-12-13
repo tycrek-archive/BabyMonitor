@@ -3,7 +3,7 @@
 	"network-address": "192.168.0.0",
 	"network-subnet": "255.255.255.0/24",
 
-	"devices": {
+	"devices": [
 
-	}
+	]
 }

@@ -1,2 +1,15 @@
-<h3 class="inline-block">Device</h3> <button id="refresh-device" name="device-elm" class="inline-block" onclick="refreshDevice()" disabled>Refresh</button>
+<h3 class="inline-block">Device</h3> <button id="refresh-device" name="device-elm" class="inline-block" onclick="refreshDevice(document.getElementById('device-id').value)" enabled>Refresh</button>
 <hr>
+
+<b>Device name:</b> <input class="right-align" id="device-name" name="device-elm" disabled><br><br>
+<b>Device identifier:</b> <input class="right-align" id="device-id" name="device-elm" disabled><br><br>
+<b>Device address:</b> <input class="right-align" id="device-address" name="device-elm" disabled><br><br><br>
+
+<button onclick="pingDevice(document.getElementById('device-address').value,document.getElementById('device-id').value)">Ping Device</button> <text id="device-ping-status" class="right-align">&nbsp;</text>
+
+
+
+
+<br><br>
+<hr>
+<button id="edit-mode-device" onclick="editMode('device')">Toggle Edit Mode</button> <button id="save-device" name="device-elm" onclick="updateDevice()" disabled="">Update</button>
