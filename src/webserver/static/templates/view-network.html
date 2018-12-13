@@ -1,0 +1,19 @@
+<h3 class="inline-block">Network</h3> <button id="refresh-network" name="network-elm" class="inline-block" onclick="refreshNetwork()">Refresh</button>
+<hr>
+
+<b>Network name:</b> <input class="right-align" id="network-name" name="network-elm" disabled><br><br>
+<b>Network address:</b> <input class="right-align" id="network-address" name="network-elm" disabled><br><br>
+<b>Network subnet:</b> <input class="right-align" id="network-subnet" name="network-elm" disabled><br><br>
+
+<br><br>
+<b>Devices:</b> <text id="device-count">0</text> <button id="add-device" name="network-elm" onclick="addDevice()" disabled>Add Device</button>
+
+<div>
+	<ul id="device-list">
+
+	</ul>
+</div>
+
+<br><br>
+<hr>
+<button id="edit-mode-network" onclick="editMode('network')">Toggle Edit Mode</button> <button id="save-network" name="network-elm" onclick="saveNetwork()" disabled>Save</button>

@@ -1,18 +1,36 @@
+:root {
+	--dark: #212121;
+	--light: #F5F5F5;
+}
+
 html, body {
 	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: var(--dark);
+	color: var(--light);
 }
 
 body {
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
 }
 
-.inline-text {
+.inline-block {
 	display: inline-block;
 }
 
 .column {
 	display: inline-block;
 	width: 45%;
-	outline: 1px 1px 1px 1px;
+	outline: 2px solid var(--light);
+	outline-offset: -2px;
+	padding: 1%;
+	margin-bottom: 2%;
 }
+
+.device-li {
+	padding-bottom: 0.5em;
+}
+
+.right-align { float: right; }
+.left-align { float: left; }
