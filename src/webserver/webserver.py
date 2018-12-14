@@ -10,6 +10,7 @@ import json
 import os
 from platform import system as system_name
 from subprocess import call as system_call
+import subprocess
 
 app = Flask("BabyMonitor")
 
@@ -55,6 +56,9 @@ def pingdevice():
 	command = ['ping', param, '1', address]
 
 	# Pinging
+	result = subprocess.check_output(command)
+	if 'host unreachable' in str(result) or 'timed out' in str(result):
+		return 'offline'
 	return 'online' if system_call(command) == 0 else 'offline'
 
 app.run(debug=True, host=HOST, port=PORT)
