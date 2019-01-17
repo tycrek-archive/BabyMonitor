@@ -1,0 +1,32 @@
+{
+    "network-name": "default",
+    "network-address": "192.168.0.0",
+    "network-subnet": "255.255.255.0/24",
+    "devices": {
+        "INDDS01": {
+            "device-name": "INDDS01",
+            "device-id": "INDDS01",
+            "device-address": "INDDS01"
+        },
+        "INDJS02": {
+            "device-name": "INDJS02",
+            "device-id": "INDJS02",
+            "device-address": "INDJS02"
+        },
+        "INDJS05": {
+            "device-name": "INDJS05",
+            "device-id": "INDJS05",
+            "device-address": "INDJS05"
+        },
+        "INDRWDC02": {
+            "device-name": "INDRWDC02",
+            "device-id": "INDRWDC02",
+            "device-address": "INDRWDC02"
+        },
+        "MELDS01": {
+            "device-name": "MELDS01",
+            "device-id": "MELDS01",
+            "device-address": "MELDS01"
+        }
+    }
+}

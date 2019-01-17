@@ -1,0 +1,14 @@
+Device:
+
+*Name
+*Internal ID
+*Address
+Owner
+*Type
+*Model #
+*Serial #
+Last online
+Created
+Modified
+OS
+Location

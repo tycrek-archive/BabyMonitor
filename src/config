@@ -1,9 +1,0 @@
-## Configuration file
-# All empty lines or lines beginning with # will be ignored.
-# Be sure to back up this file if you want to make changes!
-
-## Webserver configuration
-# host: the address the webserver listens on (useful for multiple network interfaces)
-# port: the port the webserver listens on (useful if other webservers conflict with this one)
-host="0.0.0.0"
-port=8081

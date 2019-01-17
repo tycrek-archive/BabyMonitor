@@ -11,7 +11,6 @@ function loadTemplates() {
 }
 
 function loadNetTemplate() {
-
 	fetch('/static/templates/view-network.html', {
 		cache: 'no-cache'
 	})
@@ -60,6 +59,14 @@ function refreshNetwork() {
 				addDevice(0, devname, devid, devaddress);
 			}
 		}
+
+		var ul_devices = document.getElementById('device-list').getElementsByTagName('li');
+		console.log(ul_devices);
+		for (i = 0; i < ul_devices.length; i++) {
+			devid = ul_devices[i].id;
+			refreshDevice(devid);
+			pingDevice(document.getElementById('device-address').value,devid);
+		}
 	});
 }
 
@@ -99,9 +106,9 @@ function addDevice(mode, devname='My Device', devid='mydevice481928', devaddress
 	devView.setAttribute('class', 'right-align');
 	devView.setAttribute('onclick', 'refreshDevice("' + devid + '")');
 
-	li.appendChild(devName);
-	li.appendChild(document.createTextNode(" "));
 	li.appendChild(devIndicator);
+	li.appendChild(document.createTextNode(" "));
+	li.appendChild(devName);
 	li.appendChild(document.createTextNode(" "));
 	li.appendChild(devView);
 
